@@ -1,35 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miguel Angel Herrera | portafolio</title>
-</head>
-<body>
-    <head>
-        <img class="fotografia" src="imagenes\pc.jpg" alt="logo large" height="300"  />
-        <h1>Miguel Angel Herrera</h1>
-        <hr/>
-        <h2>Ingeniero Informatico</h2>
-        
+    <link rel="stylesheet" href="estilo.css">
+  </head>
+  <body>
+    <head class="Encabezado">
+      <img class="circle" src="imagenes\pc.jpg" alt="logo large" height="300" />
+      <h1>Miguel Angel Herrera</h1>
+      <hr />
+      <h2>Ingeniero Informatico</h2>
     </head>
     <nav id="bar" class="open">
-        <div>
-            <a href="/">
-                <imagen class="circle" src="imagenes\pc.jpg" alt="small logo" height="30"/>
-                <span>Miguel Angel Herrera <small>Ingeniero Informatico</small></span>
-            </a>
-            <button id="Hamburger">☰</button>
-        </div>
-        <ul>
-            <li><a href="#Portafolio">Portafolio</a></li>
-            <li><a href="#Habilidades">Habilidades</a></li>
-            <li><a href="#Experiencia">Experiencia</a></li>
-            <li><a href="#Contacto">Contacto</a></li>
-        </ul>
+      <div>
+        <a href="/">
+          <imagen class="circle" src="imagenes\pc.jpg" alt="small logo" />
+          <span>Miguel Angel Herrera <small>Ingeniero Informatico</small></span>
+        </a>
+        <button id="Hamburger">☰</button>
+      </div>
+      <ul>
+        <li><a href="#Portafolio">Portafolio</a></li>
+        <li><a href="#Habilidades">Habilidades</a></li>
+        <li><a href="#Experiencia">Experiencia</a></li>
+        <li><a href="#Diseños">Diseños</a></li>
+        <li><a href="#Consultas">Consultas</a></li>
+        <li><a href="#Talleres">Talleres</a></li>
+        <li><a href="#Contacto">Contacto</a></li>
+      </ul>
     </nav>
     <main>
-    <section></section>
+      <section id="Portafolio">
+        <h3>Portafolio</h3>
+        <hr />
+        <div>
+          <button>
+            <img src="imagenes\proyecto_futuro.avif" height="300" />
+            <h4>Proyecto 1</h4>
+          </button>
+          <button>
+            <img src="imagenes\proyecto_futuro.avif" height="300" />
+            <h4>Proyecto 2</h4>
+          </button>
+        </div>
+      </section>
+      <section id="Habilidades" class="Habilidades">
+        <h3>Habilidades</h3>
+        <hr />
+        <div>
+          <div>
+            <img src="imagenes\logos\htm5.png" height="100" />
+            <span class="herramientas">HTML</span>
+          </div>
+          <div>
+            <img src="imagenes\logos\css3.png" height="100" />
+            <span class="herramientas">CSS</span>
+          </div>
+          <div>
+            <img src="imagenes\logos\JavaScript.png" height="100" />
+            <span class="herramientas">JavaScript</span>
+          </div>
+          <div>
+            <img src="imagenes\logos\python.png" height="100" />
+            <span class="herramientas">Python</span>
+          </div>
+        </div>
+      </section>
+      <section id="Experiencia">
+        <h3>Experiencia</h3>
+        <hr/>
+        <div>
+          <a>
+            <img src="imagenes\logos\Socya.png" height="100" />
+            <h4>Fundacion Socya</h4>
+          </a>
+          <a>
+            <img src="imagenes\logos\SONDA.png" height="100" />
+            <h4>SONDA de colombia</h4>
+          </a>
+        </div>
+      </section>
+      <section id="Diseños">
+          <h3></h3>
+      </section>
+      <section id="Contacto" class="Contacto">
+         <h3>Contacto</h3>
+         <hr/>
+         <form action="https://formspree.io/f/{form_id}" method="post">
+            <label for="email">
+                Tu Email:
+                <input type="email" name="_replyto">
+            </label>
+            <label>
+              Tu mensaje:
+              <textarea name="mensaje"></textarea>
+            </label>
+            <button type="submit">Enviar</button>
+            </form>
+            <nav id="Social">
+              <a href="https://github.com/maherrera3407">
+                <img id="github" src="imagenes\logos\git.png" height="70"/>
+                <h4>Github</h4>
+              </a>
+            </nav>
+      </section>
+
+      <footer>
+        <small>Esta página ha sido desarrollada por Miguel Angel Herrera. @2023. Todos los derechos reservados. </small>
+      </footer>
     </main>
-</body>
+  </body>
 </html>
