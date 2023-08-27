@@ -1,0 +1,15 @@
+.Encabezado{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    color: dimgray;
+    background-color: aquamarine;
+}
+
+.circle{
+    width: 150px;
+    height: 150px;
+    border-radius: 360px;
+}
+
