@@ -20,7 +20,6 @@
     transition: color .3s ease, color .3s ease;
 }
 
-
 #navbar div img {
     margin-right: .5rem;
 }
@@ -35,7 +34,6 @@
     cursor: pointer;
 }
 
-
 #navbar.open button {
     background-color: var(--black);
     color: var(--white);    
@@ -47,15 +45,13 @@
     border-top: 1px solid rgba(255,255,255,0.1);
     padding: 0;
     margin: 0;
-    /* max-height: 0; */
     transition: max-height .3s ease;
     position: absolute;
     width: 100%;
     overflow: hidden;
 }
-
 #navbar.open ul {
-    max-height: 150px;
+    max-height: 263.5px;
 }
 
 #navbar li {
@@ -77,22 +73,4 @@
     color: var(--black);
     background-color: var(--white);
 }
-
-.navbar-fixed {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 100;
-}
-
-#toggle:hover {
-    background-color: var(--black);
-}
-
-#active {
-    background-color: var(--primary-dark);
-}
-
-
-
-
+/* listo */

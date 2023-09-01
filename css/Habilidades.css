@@ -1,0 +1,60 @@
+#Habilidades > div {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,minmax(210px,1fr)
+    );
+    grid-gap: 0.1rem;
+    margin: 1rem;
+}
+
+#Habilidades img {
+  border-radius: 16%;
+  width: 100%;
+  cursor: context-menu;
+}
+
+
+#Habilidades > div > div {
+  position: relative;
+  margin: 1rem;
+}
+  
+#Habilidades span {
+  width: 140px;
+  font-size: 1.5rem;
+  background-color: rgba(0,0,0,0.75);
+  text-align: center;
+  padding: .5rem 0;
+  border-radius: .5rem;
+  position: absolute;
+  z-index: 1;
+  top: -57px;
+  left: 47.5%;
+  transform: translate(-60px, 10px);
+  opacity: 0;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+#Habilidades > div > div:hover span {
+  opacity: 1;
+  transform: translate(-60px, 0px);
+}
+
+#Habilidades span:after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 7px;
+  border-style: solid;
+  border-color: rgba(0,0,0,0.75) transparent transparent transparent;
+}
+/* listo */
+
+
+
+
+  
+  

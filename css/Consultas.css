@@ -1,0 +1,23 @@
+
+.consultas div{ 
+    margin: 0 auto;
+    background-color: var(--primary); 
+    height: 250px;
+    width: 280px;
+    border-radius: 30px;
+    padding-top: 30px;
+    font-size: 2.4rem; 
+}
+
+.consultas div a:hover{
+    color: var(--white);
+    padding: 5px;
+    font-size: 2.9rem;
+    transition: color .4s ease, color .4s ease;  
+}
+.consultas div:hover{
+    height: 250px;
+    width: 290px;
+    transition: color .4s ease, color .4s ease;
+}
+/* listo */

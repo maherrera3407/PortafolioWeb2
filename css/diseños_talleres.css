@@ -1,0 +1,81 @@
+.center_block > div{
+    grid-gap: .1rem;
+    margin:1rem;
+}
+
+.center_block button {
+    display: run-in;
+    position: relative;
+    margin: 2%;
+    width: 309px;
+    height: 309px;
+    overflow: hidden;
+    box-shadow: 0 0 20px var(--gray2);
+    padding: 0;
+    border: none;
+    cursor: zoom-in;
+}
+
+.center_block img {
+    display: block;
+    height: 309px;
+    transition: transform ease .3s;
+}
+
+.center_block  button:hover img {
+    transform: scale(1.25);
+}
+
+
+.center_block button:before {
+    content: '';
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    transition: opacity ease .3s;
+    opacity: 0;
+}
+
+.center_block button:hover:before {
+    opacity: 0.75;
+}
+
+.center_block h4 {
+    display: block;
+    margin: 0;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: var(--white);
+    opacity: 0;
+    transition: bottom ease .3s, opacity ease .3s;
+}
+
+.center_block button:hover h4 {
+    bottom: 20%;
+    opacity: 1;
+}
+
+.center_block button:after {
+    content: url('../imagenes/Iconos/zoom.svg');
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    top: 0%;
+    transform: translate(-40%, -50%); 
+    opacity: 0;
+    transition: top ease .3s, opacity ease .3s;
+}
+
+.center_block button:hover:after {
+    top: 38%;
+    opacity: .75;
+}
+/* listo */
