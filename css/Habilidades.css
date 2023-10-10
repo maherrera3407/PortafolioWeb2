@@ -1,11 +1,12 @@
 #Habilidades > div {
-    display: grid;
-    grid-template-columns: repeat(
-      auto-fit,minmax(210px,1fr)
-    );
-    grid-gap: 0.1rem;
-    margin: 1rem;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,minmax(210px,1fr)
+  );
+  grid-gap: 0.1rem;
+  margin: 1rem;
 }
+
 
 #Habilidades img {
   border-radius: 16%;
